@@ -1,0 +1,579 @@
+/* ===================================root css start=================================== */
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+ol,ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+/* ===================================root css end=================================== */
+/* ===================================common css start=================================== */
+.container
+{
+    max-width: 1320px;
+    margin: auto;
+}
+
+.flex
+{
+    display: flex;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-l
+{
+    font-weight: 300;
+}
+
+.font-r
+{
+    font-weight: 400;
+}
+
+.font-m
+{
+    font-weight: 500;
+}
+
+.font-sb
+{
+    font-weight: 600;
+}
+
+.font-16
+{
+    font-size: 16px;
+}
+
+.font-24
+{
+    font-size: 24px;
+}
+
+.font-36
+{
+    font-size: 36px;
+}
+
+.font-56
+{
+    font-size: 56px;
+}
+/* ===================================common css end=================================== */
+/* ===================================nav css start=================================== */
+nav
+{
+ background-color: #EEEDDE;
+ padding-top: 63px;
+}
+
+.items__center
+{
+    align-items: center;
+}
+
+.nav_logo
+{
+ width: 50%;
+}
+
+menu ul
+{
+ column-gap: 100px;
+ display: flex;
+}
+
+menu ul li a
+{
+    color: #203239;
+    position: relative;
+}
+
+menu ul li a i
+{
+    margin-left: 4px;
+}
+
+menu ul li a::after
+{
+    content: "";
+    width: 0px;
+    height: 3px;
+    background-color: #F6762E;
+    border-radius: 20%;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .4s;
+}
+
+menu ul li a:hover::after
+{
+    width: 30px;
+}
+/* ===================================nav css end=================================== */
+/* ===================================banner section css start=================================== */
+#banner
+{
+    padding-top: 39px;
+    background-color: #EEEDDE;
+}
+
+.banner_content h1
+{
+    line-height: 150%;
+    width: 777px;
+    color: #203239;
+}
+
+.banner__content_p
+{
+    line-height: 32px;
+    width: 544px;
+    color: #203239;
+    margin-top: 24px;
+}
+
+.banner_search input
+{
+    width: 675px;
+    height: 70px;
+    border: none;
+    outline: none;
+    margin-top: 52px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.banner_search i
+{
+    position: absolute;
+    transform: translate(27px,73px);
+    z-index: 1;
+    font-size: 27px;
+}
+
+.banner_search button
+{
+    position: absolute;
+    padding: 13px 41px;
+    color: #fff;
+    background-color: #203239;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transform: translate(-153px,65px);
+}
+
+.banner_search p
+{
+    position: absolute;
+    color: #203239;
+    transform: translate(77px,-48px);
+}
+
+.banner_count
+{
+    margin-top: 56px;
+    column-gap: 72px;
+    margin-bottom: 60px;
+}
+
+.count h2 span
+{
+    color: #FF7527;
+}
+
+.count p
+{
+    color: #203239;
+    width: 142px;
+}
+
+.banner_img
+{
+    transform: translateX(44px);
+}
+
+.banner_img picture img
+{
+    width: 401px;
+    height:522.5px ;
+ 
+}
+/* ===================================banner section css end=================================== */
+/* ===================================about section css start=================================== */
+#about
+{
+    padding-top: 100px;
+}
+
+.about_content h2
+{
+    width: 533px;
+    margin-bottom: 64px;
+    line-height: 150%;
+}
+
+.about__content {
+    column-gap: 133px;
+    padding-bottom: 100px;
+}
+
+.about__content_short
+{
+    width: 300px;
+}
+
+.about__content_p_span
+{
+    column-gap: 132px;
+    margin-bottom: 8px;
+    position: relative;
+    align-items: center;
+}
+
+.about__content_p_span::after
+{
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    transition: .4s;
+    width: 8px;
+    height: 30px;
+    background: #FF7527;
+    left: 0px;
+}
+
+.about__content_p_span p
+{
+    color: #203239;
+    margin-left: 25px;
+}
+
+.about__content_p_span span
+{
+    color: #FF7527;
+}
+
+.content_short_p
+{
+    width: 232px;
+    margin-top: 8px;
+    color: #203239;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.about__content_short a
+{
+    margin-top: 48px;
+    display: inline-block;
+    color: #203239;
+}
+
+.about__content_short a i
+{
+    margin-left: 8px;
+}
+
+.about__content_short .booking
+{
+    margin-top: 78px;
+}
+
+.about__content_short a
+{
+    position: relative;
+    z-index: 1;
+    margin-left: 6px;
+}
+
+.about__content_short a::after
+{
+    content: "";
+    background-color: #D6D5C7;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    left: -6px;
+    top: 0;
+    z-index: -1;
+}
+/* ===================================about section css end=================================== */
+/* ===================================properties residen-1 section css start=================================== */
+#properties
+{
+    background-color: #EEEDDE;
+}
+
+.properties_residen {
+    padding-bottom: 156px;
+}
+
+.properties_residen_heading
+{
+    padding-top: 68px;
+}
+
+.properties_residen_heading p
+{
+    color: #FF7527;
+    margin-bottom: 8px;
+}
+
+.properties_residen_heading h2
+{
+    margin-bottom: 64px;
+}
+
+.properties_residen_img
+{
+    position: relative;
+    padding-right: 240px;
+}
+
+.residen-1 {
+    transform: translateX(-244px) translateY(59px);
+    position: absolute;
+}
+
+.properties_residen_content h2
+{
+    color: #203239;
+    width: 507px;
+}
+
+.properties_residen_content p
+{
+    color: #203239;
+    width: 570px;
+    margin-bottom: 48px;
+    margin-top: 24px;
+}
+
+.properties_residen_content_btn a i
+{
+    margin-right: 12px;
+}
+
+.properties_residen_content_btn a
+{
+    border: 1px solid #203239;
+    padding: 13px 41px;
+    border-radius: 10px;
+    margin-right: 48px;
+    margin-top: 48px;
+    transition: .4s;
+}
+
+.properties_residen_content_btn a:hover
+{
+    background: #203239;
+    color: #fff;
+}
+
+.properties_residen_content_btn a i:hover
+{
+    background: #203239;
+    color: #fff;
+}
+/* ===================================properties residen-1 section css end=================================== */
+/* ===================================properties residen-2 section css start=================================== */
+.properties_residen_two
+{
+    background-color: #fff;
+}
+
+.properties_residen_two_heading p
+{
+    color: #FF7527;
+    padding-top: 68px;
+    margin-bottom: 8px;
+}
+
+.properties_residen_two_heading h2 
+{
+   width: 947px;
+   float: left;
+}
+
+.angle {
+    padding-top: 14px;
+}
+
+.angle .fa-solid {
+    margin-right: 30px;
+    color: rgba(255, 117, 39, 0.5);
+    padding: 6px 11px;
+    background: #F3F2EE;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.fa-solid:hover
+{
+    background: #fff;
+    border: 1px solid #D6D5C7;
+}
+
+.properties_residen_two_i_c
+{
+    margin-top: 64px;
+    column-gap: 49px;
+    margin-bottom: 68px;
+}
+
+.properties_residen_two_content
+{
+    margin-top: 16px;
+}
+
+.properties_residen_two_content h4
+{
+    color: #203239;
+    line-height: 150%;
+}
+
+.properties_residen_two_content p
+{
+    line-height: 30px;
+    color: #203239;
+    width: 356px;
+    margin-top: 8px;
+    margin-bottom: 68px;
+}
+/* ===================================properties residen-2 section css end=================================== */
+/* ===================================contact section css start=================================== */
+#contact
+{
+    background-color: #EEEDDE;
+}
+
+.contact_heading {
+    column-gap: 505px;
+    padding-top: 48px;
+    line-height: 150%;
+    padding-bottom: 63px;
+}
+
+.flex.contact_info_i_p {
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.contact_heading h2
+{
+    
+}
+
+.contact_info_logo {
+    padding-bottom: 48px;
+}
+
+.contact_info_l_p_b
+{
+
+}
+
+.contact_info {
+    width: 243px;
+    margin-right: 48px;
+    border: 1px solid rgba(255, 117, 39, 0.5);
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.contact_info button {
+    padding: 13px 41px;
+    background: #F1D5B9;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #FF7527;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.contact_info button:hover {
+    background: #FC8D4C;
+    color: #fff;
+}
+
+.contact_info_i
+{
+
+}
+
+.contact_info_i i {
+    color: #203239;
+    padding-right: 16px;
+}
+
+.contact_info_p
+{
+
+}
+
+.contact_info_p p {
+    width: 131px;
+}
+
+.contact_info_p p span
+{
+    
+}
+
+.contact_info_logo img {
+    margin-left: 32px;
+}
+/* ===================================contact section css end=================================== */
+/* ===================================footer section css start=================================== */
+footer
+{
+    background: #203239;
+}
+
+.footer_logo_social 
+{
+    padding: 31px 0px;
+    column-gap: 806px;
+    align-items: center;
+}
+
+.footer_logo
+{
+
+}
+
+.footer_logo img
+{
+    
+}
+
+.fooner_social
+{
+
+}
+
+.fooner_social i
+{
+    padding-right: 64px;
+    color: #EEEDDE;
+    font-size: 23px;
+}
+/* ===================================footer section css end=================================== */
